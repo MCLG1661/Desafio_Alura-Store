@@ -1,6 +1,6 @@
 # Desafio Alura Store : 🛍️ Análise de Dados - Tech Foundation : Especialização Data Science  - Módulo : Fundamentos de Python e Dados (Oracle Next Education G9 BR)
 
-Este projeto, parte da terceira etapa do ONE G9 BR, tem como objetivo realizar uma análise detalhada do desempenho de 4 lojas com base em dados de vendas, produtos e clientes. Desenvolvido em Python no ambiente Google Colab, o notebook permite visualizar métricas importantes, identificar padrões e gerar insights para tomada de decisão.
+Este desafio/projeto, parte da terceira etapa do ONE G9 BR, tem como objetivo realizar uma análise detalhada do desempenho de 4 lojas com base em dados de vendas, produtos e clientes. Desenvolvido em Python no ambiente Google Colab, o notebook permite visualizar métricas importantes, identificar padrões e gerar insights para tomada de decisão.
 
 ---
 
