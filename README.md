@@ -1,92 +1,235 @@
-# Desafio Alura Store : 🛍️ Análise de Dados - Tech Foundation : Especialização Data Science  - Módulo : Fundamentos de Python e Dados (Oracle Next Education G9 BR)
+# 🛍️ Alura Store — Análise de Desempenho de Lojas
 
-Este desafio/projeto, parte da terceira etapa do ONE G9 BR, tem como objetivo realizar uma análise detalhada do desempenho de 4 lojas com base em dados de vendas, produtos e clientes. Desenvolvido em Python no ambiente Google Colab, o notebook permite visualizar métricas importantes, identificar padrões e gerar insights para tomada de decisão.
+*Data Analytics aplicado à tomada de decisão de negócio*
+
+![Python](https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Data%20Visualization-11557C)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-F9AB00?logo=googlecolab&logoColor=white)
+![Data Analytics](https://img.shields.io/badge/Data-Analytics-2E8B57)
+![Oracle ONE](https://img.shields.io/badge/Oracle-ONE%20G9-F80000?logo=oracle&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
+
+ **Alura Store** é um projeto de Data Analytics desenvolvido durante a 
+**Tech Foundation — Especialização em Data Science**, integrante do programa 
+**Oracle Next Education (ONE) G9 BR / Alura**.
+
+O desafio consiste em analisar o desempenho de quatro lojas a partir de dados 
+de vendas, produtos, avaliações e custos de frete, transformando os dados em 
+informações capazes de apoiar uma decisão de negócio:
+
+> **Qual loja apresenta o menor desempenho e deveria ser considerada para venda?**
+
+O projeto utiliza **Python e análise exploratória de dados (EDA)** para calcular 
+indicadores, comparar o desempenho das unidades, criar visualizações e fundamentar 
+uma recomendação baseada em dados.
 
 ---
 
-## 📌 Objetivo
+## 🎯 Objetivo
 
-Identificar a loja com menor desempenho geral para recomendação de venda, utilizando métricas como:
+Avaliar comparativamente o desempenho das quatro lojas e identificar aquela que 
+apresenta os resultados menos favoráveis considerando diferentes dimensões do negócio.
+
+A análise considera :
 
 - Faturamento total
 - Vendas por categoria
-- Avaliação média dos produtos
-- Produtos mais e menos vendidos
-- Frete médio
+- Avaliação média dos clientes
+- Produtos mais vendidos
+- Produtos menos vendidos
+- Custo médio de frete
+
+O objetivo final é transformar essas métricas em uma **recomendação de negócio 
+fundamentada em evidências**.
 
 ---
 
-## 🧰 Tecnologias Utilizadas
+## 💼 Problema de Negócio
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-yellow?logo=googlecolab&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?logo=matplotlib&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-teal?logo=seaborn&logoColor=white)
+Tomar uma decisão sobre a venda de uma unidade não deve depender da observação 
+isolada de apenas um indicador.
+
+Uma loja pode apresentar menor faturamento, por exemplo, mas possuir avaliações 
+melhores ou custos logísticos mais competitivos.
+
+Por isso, o projeto utiliza diferentes KPIs para construir uma visão comparativa 
+do desempenho :
+
+```text
+Dados
+   ↓
+Tratamento
+   ↓
+Cálculo de KPIs
+   ↓
+Análise Comparativa
+   ↓
+Visualização
+   ↓
+Interpretação
+   ↓
+Recomendação de Negócio
+
+```
+---
+
+## 🔎 Etapas da Análise
+
+1. Faturamento por Loja
+
+Cálculo do faturamento total de cada unidade para comparação do desempenho financeiro.
+
+2. Vendas por Categoria
+
+Análise da distribuição das vendas entre diferentes categorias de produtos.
+
+3. Avaliação Média
+
+Comparação das avaliações realizadas pelos clientes para identificar diferenças 
+na percepção sobre as lojas.
+
+4. Produtos Mais e Menos Vendidos
+
+Identificação dos produtos com maior e menor volume de vendas.
+
+5. Frete Médio
+
+Comparação do custo médio de frete entre as quatro unidades.
+
+6. Análise Integrada
+
+Os diferentes indicadores são analisados conjuntamente para fundamentar a decisão final.
 
 ---
 
-## 📊 Etapas da Análise
+## 📊 Pipeline Analítico
 
-1. **Faturamento por Loja**  
-   → Gráfico de barras comparando o total vendido por cada loja.
+```text
+Dados das Lojas
+      ↓
+Importação
+      ↓
+Exploração dos Dados
+      ↓
+Cálculo das Métricas
+      ↓
+Comparação entre Lojas
+      ↓
+Visualizações
+      ↓
+Identificação de Padrões
+      ↓
+Business Insights
+      ↓
+Recomendação
+```
+---
 
-2. **Vendas por Categoria**  
-   → Gráfico de pizza mostrando a distribuição de categorias na loja com maior diversidade.
+## 📈 Visualização de Dados
 
-3. **Avaliação Média**  
-   → Gráfico de barras com a nota média dos produtos por loja.
+O projeto utiliza gráficos para facilitar a comparação dos principais indicadores.
 
-4. **Produtos Mais e Menos Vendidos**  
-   → Gráfico de barras com os 5 produtos mais vendidos da loja com maior volume.
+Entre as visualizações desenvolvidas estão :
 
-5. **Frete Médio por Loja**  
-   → Gráfico de linha comparando o custo médio de frete entre as lojas.
+- Gráfico de barras para faturamento
+- Visualização da distribuição das categorias
+- Comparação das avaliações médias
+- Ranking de produtos
+- Comparação do frete médio
+
+As visualizações complementam a análise numérica e tornam os padrões encontrados 
+nos dados mais fáceis de interpretar.
 
 ---
 
-## 📎 Como Executar
+## 💡 Da Análise à Decisão
 
-1. Acesse o [Google Colab](https://colab.research.google.com/)
-2. Importe o notebook `.ipynb` do projeto
-3. Execute as células passo a passo para visualizar os gráficos e o relatório final
+Um dos principais objetivos do desafio é demonstrar que Data Analytics não termina 
+na geração de gráficos.
+
+O fluxo completo envolve:
+
+**Dados → Informação → Insight → Recomendação → Decisão**
+
+A recomendação final é construída a partir da análise conjunta dos indicadores, 
+evitando utilizar uma única métrica como critério para determinar o desempenho 
+de uma loja.
 
 ---
 
-## 📂 Estrutura do Projeto
-📦 analise-lojas
+## 🛠️ Tecnologias
 
-├── data/                        # Pasta para armazenar os arquivos de entrada (CSV, Excel, etc.)
-│   └── vendas.csv               # Exemplo de arquivo de vendas
+
+**Python** - Desenvolvimento da análise
+**Pandas** - Manipulação e análise dos dados
+**Matplotlib** - Visualização dos indicadores
+**Jupyter Notebook** - Organização da análise
+**Google Colab** - Ambiente de desenvolvimento e execução 
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+Alura-Store/
 │
-├── notebooks/                   # Notebooks Jupyter ou Colab
-│   └── analise_loja.ipynb       # Notebook principal com a análise
-│
-├── src/                         # Código-fonte modularizado (opcional)
-│   ├── limpeza_dados.py         # Funções para limpeza e pré-processamento
-│   ├── calculo_metricas.py      # Funções para cálculo de KPIs
-│   ├── visualizacoes.py         # Funções para geração de gráficos
-│   └── relatorio.py             # Geração de relatórios ou exportação de resultados
-│
-├── outputs/                     # Resultados gerados (gráficos, relatórios, etc.)
-│   ├── graficos/                # Imagens geradas
-│   └── relatorios/              # Arquivos exportados (PDF, Excel, etc.)
-│
-├── requirements.txt             # Lista de dependências do projeto
-├── README.md                    # Documentação do projeto
-└── .gitignore                   # Arquivos e pastas a serem ignorados pelo Git
+├── AluraStoreBr.ipynb
+└── README.md
+```
 
-Descrição dos diretórios:
-- data/: Contém os arquivos CSV com os dados brutos de cada loja.
-- notebooks/: Notebook principal com todas as análises e visualizações.
-- images/: Gráficos gerados durante a análise.
-- relatorio_final.py: Script que gera o relatório automatizado com base nas análises.
-- README.md: Documentação do projeto.
+O notebook contém o processo de análise, cálculos, visualizações e conclusão do desafio.
 
 ---
 
-## 📬 Contato
+## ▶️ Como Executar
 
-Projeto desenvolvido por Marcus  
-📧 Email: [mclguedes@gmail.com]  
-📱 LinkedIn: [https://www.linkedin.com/in/marcusguedes]
+1. Faça o download ou clone o repositório.
+2. Abra `AluraStoreBr.ipynb` no **Google Colab** ou **Jupyter Notebook**.
+3. Execute as células sequencialmente.
+4. Consulte as análises, gráficos e conclusão apresentados no notebook.
+
+---
+
+## 💡 Competências Demonstradas
+
+- Python
+- Pandas
+- Data Analytics
+- Análise Exploratória de Dados — EDA
+- Manipulação de dados
+- Cálculo de KPIs
+- Data Visualization
+- Análise comparativa
+- Business Analytics
+- Geração de insights
+- Tomada de decisão baseada em dados
+- Comunicação analítica
+
+---
+
+## 🎓 Contexto Acadêmico
+
+O projeto foi desenvolvido como **primeiro desafio da Tech Foundation — 
+Especialização em Data Science**, terceira etapa da jornada no programa 
+**Oracle Next Education (ONE) G9 BR / Alura**.
+
+O desafio teve como foco aplicar fundamentos de Python e análise de dados a 
+um problema de negócio, transformando informações de vendas em uma recomendação 
+orientada por dados.
+
+---
+
+## 👨‍💻 Autor
+
+**Marcus Guedes**
+
+Marketing | Data Science | Inteligência Artificial | Gestão de Projetos
+
+GitHub: MCLG1661  
+LinkedIn: Marcus Guedes
+
+---
+
+📊 **Transformando dados em informação, insights e decisões de negócio.**
