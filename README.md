@@ -6,6 +6,8 @@
 [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](#)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](#)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MCLG1661/Desafio_Alura-Store/blob/main/AluraStoreBr.ipynb)
+
 > **Dados → KPIs → Comparação → Insights → Recomendação → Decisão**
 
 Projeto de **Data Analytics** desenvolvido para analisar o desempenho de quatro lojas da Alura Store e apoiar uma decisão de negócio:
