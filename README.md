@@ -73,7 +73,7 @@ Essa abordagem busca evitar um problema comum em projetos de análise de dados: 
 ```text
 Desafio_Alura-Store/
 │
-├── AluraStoreBr.ipynb
+├── AluraStoreBr_Portfolio.ipynb
 │   └── Notebook completo com análise, visualizações,
 │       insights e recomendação final
 │
