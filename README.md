@@ -6,7 +6,7 @@
 [![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](#)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](#)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MCLG1661/Desafio_Alura-Store/blob/main/AluraStoreBr.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MCLG1661/Desafio_Alura-Store/blob/main/AluraStoreBr_Portfolio.ipynb)
 
 > **Dados → KPIs → Comparação → Insights → Recomendação → Decisão**
 
