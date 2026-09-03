@@ -498,8 +498,9 @@ A versão apresentada neste repositório foi reorganizada com foco adicional em:
 
 Marketing | Data Science | Inteligência Artificial | Gestão de Projetos
 
-GitHub:  
-https://github.com/MCLG1661
+GitHub: https://github.com/MCLG1661
+
+Linkedin: https://www.linkedin.com/in/marcusguedes/
 
 ---
 
